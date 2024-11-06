@@ -8,7 +8,7 @@ account = os.getenv("ACCOUNT")
 private_key = os.getenv("PRIVATE_KEY")
 provider = os.getenv("LOCAL_PROVIDER")
 
-chain_id = os.getenv("CHAIN_ID")
+chain_id = int(os.getenv("CHAIN_ID"))
     
 connection = Web3(Web3.HTTPProvider(provider))
 contract_address, abi = deploy_contract(contract, "SimpleStorage", account, private_key, provider, chain_id)
