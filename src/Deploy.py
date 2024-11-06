@@ -38,4 +38,5 @@ def deploy_contract(contract:str, contract_name:str, account:str, private_key:st
     tx_hash = connection.eth.send_raw_transaction(signed_txn.raw_transaction)
 
     tx_receipt = connection.eth.wait_for_transaction_receipt(tx_hash)
+    print("Contract Address",tx_receipt.contractAddress)
     return (tx_receipt.contractAddress, abi)
