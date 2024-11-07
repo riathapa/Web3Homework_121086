@@ -4,8 +4,8 @@ import os
 
 
 contract = "SimpleStorage.sol"
-ACCOUNT = os.getenv("ACCOUNT")
-PRIVATE_KEY = os.getenv("PRIVATE_KEY")
+ACCOUNT = os.getenv("ANVIL_ACCOUNT")
+PRIVATE_KEY = os.getenv("ANVIL_PRIVATE_KEY")
 PROVIDER = os.getenv("LOCAL_PROVIDER")
 
 chain_id = int(31337)
