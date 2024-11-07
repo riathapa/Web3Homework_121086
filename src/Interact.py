@@ -36,3 +36,5 @@ print("Updated")
 
 updated_value = simple_storage.functions.get().call()
 print("Updated value" , updated_value) 
+
+print("Contract Address : ", contract_address)
