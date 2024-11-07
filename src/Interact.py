@@ -18,7 +18,7 @@ contract_address, abi = deploy_contract(contract, "SimpleStorage", ACCOUNT, PRIV
 simple_storage = connection.eth.contract(address=contract_address, abi = abi)
 nonce = connection.eth.get_transaction_count(ACCOUNT)
 
-transaction = simple_storage.functions.set(150005647).build_transaction(
+transaction = simple_storage.functions.set(5341).build_transaction(
     {
             "chainId":chain_id,
             "gasPrice":connection.eth.gas_price,
